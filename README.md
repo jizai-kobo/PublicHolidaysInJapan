@@ -9,22 +9,22 @@
   今後（2022年以降）祝日に関する法律・規則等が変更された場合はプログラムのメンテナンスが必要です。
   
 # プログラム
-  - SpecialHolidaycls.cls
+  - SpecialHolidaycls.cls  
    ひとつの祝日を定義するクラスモジュールです。
    
-  - Holidaycls.cls
+  - Holidaycls.cls  
    クラスモジュール「SpecialHolidaycls.cls」のインスタンスを定義し、メンバーのコレクションに格納しています。
    日付のシリアル値を与えて、それが祝日かどうかを判定するメソッドを定義しています。
    コレクションのキーを発生させるためにクラスモジュール「KeyGencls.cls」のインスタンスを発生させています。
    
-  - KeyGencls.cls
+  - KeyGencls.cls  
     クラスモジュール「Holidaycls.cls」のメンバーのコレクションのキー値を発生させるクラスモジュールです。
     
-  - Module1.bas
+  - Module1.bas  
     日付のシリアル値を与えて、それが日曜・祝日かどうかを判定する関数と、
     祝日だった場合に祝日の名前を返す関数を定義しています。
     いずれの関数もクラスモジュール「Holidaycls.cls」のインスタンスを発生させています。
     
-  - Calendar_Aug1948-Dec2030.xlsm
+  - Calendar_Aug1948-Dec2030.xlsm  
     Module1.basに定義された関数を用いて、1948年8月から2030年12月までのカレンダーを作成しました。
     文字色は条件付き書式により付与しています。
